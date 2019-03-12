@@ -32,7 +32,7 @@ import ca.corefacility.bioinformatics.irida.service.workflow.IridaWorkflowsServi
  * <https://github.com/phac-nml/irida/blob/development/src/main/java/ca/corefacility/bioinformatics/irida/pipeline/results/AnalysisSampleUpdater.java>
  * or the README.md file in this project for more details.
  */
-public class ExamplePluginUpdater implements AnalysisSampleUpdater {
+public class CPOPipelinePluginUpdater implements AnalysisSampleUpdater {
 
 	private final MetadataTemplateService metadataTemplateService;
 	private final SampleService sampleService;
@@ -45,7 +45,7 @@ public class ExamplePluginUpdater implements AnalysisSampleUpdater {
 	 * @param sampleService           The sample service.
 	 * @param iridaWorkflowsService   The irida workflows service.
 	 */
-	public ExamplePluginUpdater(MetadataTemplateService metadataTemplateService, SampleService sampleService,
+	public CPOPipelinePluginUpdater(MetadataTemplateService metadataTemplateService, SampleService sampleService,
 			IridaWorkflowsService iridaWorkflowsService) {
 		this.metadataTemplateService = metadataTemplateService;
 		this.sampleService = sampleService;
