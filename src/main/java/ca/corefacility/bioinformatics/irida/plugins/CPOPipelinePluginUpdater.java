@@ -39,7 +39,7 @@ public class CPOPipelinePluginUpdater implements AnalysisSampleUpdater {
 	private final IridaWorkflowsService iridaWorkflowsService;
 
 	/**
-	 * Builds a new {@link ExamplePluginUpdater} with the given services.
+	 * Builds a new {@link CPOPipelinePluginUpdater} with the given services.
 	 * 
 	 * @param metadataTemplateService The metadata template service.
 	 * @param sampleService           The sample service.
@@ -222,6 +222,6 @@ public class CPOPipelinePluginUpdater implements AnalysisSampleUpdater {
 	 */
 	@Override
 	public AnalysisType getAnalysisType() {
-		return ExamplePlugin.READ_INFO;
+		return CPOPipelinePlugin.CPO;
 	}
 }

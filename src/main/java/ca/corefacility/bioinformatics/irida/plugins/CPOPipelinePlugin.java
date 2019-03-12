@@ -25,7 +25,7 @@ public class CPOPipelinePlugin extends Plugin {
 	 * is used to store the type of the analysis pipeline (which should be unique
 	 * for each pipeline).
 	 */
-	public static final AnalysisType READ_INFO = new AnalysisType("READ_INFO");
+	public static final AnalysisType CPO = new AnalysisType("CPO");
 
 	public CPOPipelinePlugin(PluginWrapper wrapper) {
 		super(wrapper);
@@ -59,7 +59,7 @@ public class CPOPipelinePlugin extends Plugin {
 		 */
 		@Override
 		public AnalysisType getAnalysisType() {
-			return READ_INFO;
+			return CPO;
 		}
 
 		/**
@@ -74,7 +74,7 @@ public class CPOPipelinePlugin extends Plugin {
 		 */
 		@Override
 		public UUID getDefaultWorkflowUUID() {
-			return UUID.fromString("79d90ca8-00ae-441b-b5c7-193c9e85a968");
+			return UUID.fromString("ad654703-f142-4705-9258-7aa022a30cb0");
 		}
 
 		/*******************************************************************************
@@ -123,7 +123,7 @@ public class CPOPipelinePlugin extends Plugin {
 		@Override
 		public Optional<AnalysisSampleUpdater> getUpdater(MetadataTemplateService metadataTemplateService,
 				SampleService sampleService, IridaWorkflowsService iridaWorkflowsService) throws IridaPluginException {
-			return Optional.of(new ExamplePluginUpdater(metadataTemplateService, sampleService, iridaWorkflowsService));
+			return Optional.of(new CPOPipelinePluginUpdater(metadataTemplateService, sampleService, iridaWorkflowsService));
 		}
 	}
 }

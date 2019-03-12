@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <iridaWorkflow>
-  <id>79d90ca8-00ae-441b-b5c7-193c9e85a968</id>
-  <name>ReadInfo</name>
+  <id>ad654703-f142-4705-9258-7aa022a30cb0</id>
+  <name>CPOPipeline</name>
   <version>0.1.0</version>
-  <analysisType>READ_INFO</analysisType>
+  <analysisType>CPO</analysisType>
   <inputs>
     <sequenceReadsPaired>sequence_reads</sequenceReadsPaired>
     <requiresSingleSample>true</requiresSingleSample>
